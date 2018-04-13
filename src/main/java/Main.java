@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 /** 
  * 
@@ -40,7 +41,8 @@ public class Main {
 		User u10=new User("clara", 12, false);
 		users.add(u10);
 		
-		users.sort(null);
+		Collections.sort(users);
+		users.remove(0);
 		
 		for(int i=0;i<users.size();i++)
 		{
