@@ -51,16 +51,13 @@ public class Main {
 		}
 		*/
 		
-
-		
 		ArrayList<User> users2 = new ArrayList();
 		User u11=new User("aa", 2, true);
 		users2.add(u11);
 		User u12=new User("bb", 3, false);
 		users2.add(u12);
 		
-		ArrayList<User> users3 = new ArrayList();
-		
+		ArrayList<User> users3 = new ArrayList();	
 		users3.addAll(users);
 		users3.addAll(users2);
 		

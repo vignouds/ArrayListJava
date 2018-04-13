@@ -52,14 +52,6 @@ public class User implements Comparable<User> {
 	}
 	
 	public int compareTo(User u) {
-		int retour = 0;
-		if (this.name.compareTo(u.name)>0)
-			retour=1;
-		else if (this.name.compareTo(u.name)<0)
-			retour=-1;
-		else
-			retour=0;
-		return retour;	
+		return this.name.compareTo(u.name);	
 	}
-	
 }
