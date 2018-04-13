@@ -43,6 +43,11 @@ public class User {
 	}
 	
 	public String toString() {
-		return this.name + this.age+this.isMale;
+		String hf;
+		if(this.isMale)
+			hf=" est un homme ";
+		else
+			hf=" est une femme ";
+		return this.name + hf +"de " + this.age + " ans.";
 	}
 }
