@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.ListIterator;
 
 /** 
  * 
@@ -44,10 +45,16 @@ public class Main {
 		Collections.sort(users);
 		users.remove(0);
 		
-		for(int i=0;i<users.size();i++)
+/*		for(int i=0;i<users.size();i++)
 		{
 			System.out.println(users.get(i));
 		}
+		*/
+		
+		ListIterator li = users.listIterator();
+		
+		while(li.hasNext())
+			System.out.println(li.next());
 		
 	}
 }
