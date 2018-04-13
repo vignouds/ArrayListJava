@@ -51,10 +51,23 @@ public class Main {
 		}
 		*/
 		
-		ListIterator li = users.listIterator();
+
+		
+		ArrayList<User> users2 = new ArrayList();
+		User u11=new User("aa", 2, true);
+		users2.add(u11);
+		User u12=new User("bb", 3, false);
+		users2.add(u12);
+		
+		ArrayList<User> users3 = new ArrayList();
+		
+		users3.addAll(users);
+		users3.addAll(users2);
+		
+		ListIterator li = users3.listIterator();
 		
 		while(li.hasNext())
 			System.out.println(li.next());
-		
+
 	}
 }
