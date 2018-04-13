@@ -3,7 +3,7 @@
  * @author Sébastien Vignoud
  *
  */
-public class User {
+public class User implements Comparable<User> {
 	String name;
 	int age;
 	boolean isMale;
@@ -50,4 +50,16 @@ public class User {
 			hf=" est une femme ";
 		return this.name + hf +"de " + this.age + " ans.";
 	}
+	
+	public int compareTo(User u) {
+		int retour = 0;
+		if (this.name.compareTo(u.name)>0)
+			retour=1;
+		else if (this.name.compareTo(u.name)<0)
+			retour=-1;
+		else
+			retour=0;
+		return retour;	
+	}
+	
 }

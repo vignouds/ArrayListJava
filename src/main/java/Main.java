@@ -40,6 +40,8 @@ public class Main {
 		User u10=new User("clara", 12, false);
 		users.add(u10);
 		
+		users.sort(null);
+		
 		for(int i=0;i<users.size();i++)
 		{
 			System.out.println(users.get(i));
