@@ -14,6 +14,7 @@ public class User implements Comparable<User> {
 		this.isMale=b;
 	}
 	
+	/**Constructeur "vide" */
 	public User() {
 		this("", 0, true);
 	}
@@ -51,6 +52,7 @@ public class User implements Comparable<User> {
 		return this.name + hf +"de " + this.age + " ans.";
 	}
 	
+	/**Permet de trier les lists avec Collections.sort*/
 	public int compareTo(User u) {
 		return this.name.compareTo(u.name);	
 	}

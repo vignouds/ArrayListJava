@@ -43,9 +43,12 @@ public class Main {
 		users.add(u10);
 		
 		Collections.sort(users);
+		
 		users.remove(0);
 		
-/*		for(int i=0;i<users.size();i++)
+		/**
+		 * Parcours d'une liste avec une boucle
+		 * for(int i=0;i<users.size();i++)
 		{
 			System.out.println(users.get(i));
 		}
@@ -57,14 +60,14 @@ public class Main {
 		User u12=new User("bb", 3, false);
 		users2.add(u12);
 		
+		/**Fusion de listes avec addAll*/
 		ArrayList<User> users3 = new ArrayList();	
 		users3.addAll(users);
 		users3.addAll(users2);
 		
-		ListIterator li = users3.listIterator();
-		
+		/**Parcours d'une list avec un iterator*/
+		ListIterator li = users3.listIterator();	
 		while(li.hasNext())
 			System.out.println(li.next());
-
 	}
 }
