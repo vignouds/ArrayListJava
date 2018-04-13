@@ -14,6 +14,10 @@ public class User {
 		this.isMale=b;
 	}
 	
+	public User() {
+		this("", 0, true);
+	}
+	
 	public String getName(){
 		return this.name;
 	}
